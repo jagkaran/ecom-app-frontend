@@ -1,0 +1,10 @@
+query Restaurants {
+  restaurants {
+    id
+    r_name
+    description
+    image {
+      url
+    }
+  }
+}

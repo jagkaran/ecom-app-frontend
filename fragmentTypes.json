@@ -1,0 +1,441 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "kind": "UNION",
+        "name": "Morph",
+        "possibleTypes": [
+          {
+            "name": "UsersPermissionsMe"
+          },
+          {
+            "name": "UsersPermissionsMeRole"
+          },
+          {
+            "name": "UsersPermissionsLoginPayload"
+          },
+          {
+            "name": "UserPermissionsPasswordPayload"
+          },
+          {
+            "name": "Dish"
+          },
+          {
+            "name": "DishConnection"
+          },
+          {
+            "name": "DishAggregator"
+          },
+          {
+            "name": "DishAggregatorSum"
+          },
+          {
+            "name": "DishAggregatorAvg"
+          },
+          {
+            "name": "DishAggregatorMin"
+          },
+          {
+            "name": "DishAggregatorMax"
+          },
+          {
+            "name": "DishGroupBy"
+          },
+          {
+            "name": "DishConnectionId"
+          },
+          {
+            "name": "DishConnectionCreated_at"
+          },
+          {
+            "name": "DishConnectionUpdated_at"
+          },
+          {
+            "name": "DishConnectionD_name"
+          },
+          {
+            "name": "DishConnectionDescription"
+          },
+          {
+            "name": "DishConnectionImage"
+          },
+          {
+            "name": "DishConnectionPrice"
+          },
+          {
+            "name": "DishConnectionRestaurant"
+          },
+          {
+            "name": "DishConnectionCreated_by"
+          },
+          {
+            "name": "DishConnectionUpdated_by"
+          },
+          {
+            "name": "createDishPayload"
+          },
+          {
+            "name": "updateDishPayload"
+          },
+          {
+            "name": "deleteDishPayload"
+          },
+          {
+            "name": "Order"
+          },
+          {
+            "name": "OrderConnection"
+          },
+          {
+            "name": "OrderAggregator"
+          },
+          {
+            "name": "OrderAggregatorSum"
+          },
+          {
+            "name": "OrderAggregatorAvg"
+          },
+          {
+            "name": "OrderAggregatorMin"
+          },
+          {
+            "name": "OrderAggregatorMax"
+          },
+          {
+            "name": "OrderGroupBy"
+          },
+          {
+            "name": "OrderConnectionId"
+          },
+          {
+            "name": "OrderConnectionCreated_at"
+          },
+          {
+            "name": "OrderConnectionUpdated_at"
+          },
+          {
+            "name": "OrderConnectionAddress"
+          },
+          {
+            "name": "OrderConnectionPostalCode"
+          },
+          {
+            "name": "OrderConnectionCity"
+          },
+          {
+            "name": "OrderConnectionDishes"
+          },
+          {
+            "name": "OrderConnectionAmount"
+          },
+          {
+            "name": "OrderConnectionUser"
+          },
+          {
+            "name": "OrderConnectionCreated_by"
+          },
+          {
+            "name": "OrderConnectionUpdated_by"
+          },
+          {
+            "name": "createOrderPayload"
+          },
+          {
+            "name": "updateOrderPayload"
+          },
+          {
+            "name": "deleteOrderPayload"
+          },
+          {
+            "name": "Pages"
+          },
+          {
+            "name": "PagesConnection"
+          },
+          {
+            "name": "PagesAggregator"
+          },
+          {
+            "name": "PagesGroupBy"
+          },
+          {
+            "name": "PagesConnectionId"
+          },
+          {
+            "name": "PagesConnectionCreated_at"
+          },
+          {
+            "name": "PagesConnectionUpdated_at"
+          },
+          {
+            "name": "PagesConnectionTitle"
+          },
+          {
+            "name": "PagesConnectionDescription"
+          },
+          {
+            "name": "PagesConnectionCreated_by"
+          },
+          {
+            "name": "PagesConnectionUpdated_by"
+          },
+          {
+            "name": "createPagePayload"
+          },
+          {
+            "name": "updatePagePayload"
+          },
+          {
+            "name": "deletePagePayload"
+          },
+          {
+            "name": "Restaurant"
+          },
+          {
+            "name": "RestaurantConnection"
+          },
+          {
+            "name": "RestaurantAggregator"
+          },
+          {
+            "name": "RestaurantGroupBy"
+          },
+          {
+            "name": "RestaurantConnectionId"
+          },
+          {
+            "name": "RestaurantConnectionCreated_at"
+          },
+          {
+            "name": "RestaurantConnectionUpdated_at"
+          },
+          {
+            "name": "RestaurantConnectionR_name"
+          },
+          {
+            "name": "RestaurantConnectionDescription"
+          },
+          {
+            "name": "RestaurantConnectionImage"
+          },
+          {
+            "name": "RestaurantConnectionCreated_by"
+          },
+          {
+            "name": "RestaurantConnectionUpdated_by"
+          },
+          {
+            "name": "createRestaurantPayload"
+          },
+          {
+            "name": "updateRestaurantPayload"
+          },
+          {
+            "name": "deleteRestaurantPayload"
+          },
+          {
+            "name": "UploadFile"
+          },
+          {
+            "name": "UploadFileConnection"
+          },
+          {
+            "name": "UploadFileAggregator"
+          },
+          {
+            "name": "UploadFileAggregatorSum"
+          },
+          {
+            "name": "UploadFileAggregatorAvg"
+          },
+          {
+            "name": "UploadFileAggregatorMin"
+          },
+          {
+            "name": "UploadFileAggregatorMax"
+          },
+          {
+            "name": "UploadFileGroupBy"
+          },
+          {
+            "name": "UploadFileConnectionId"
+          },
+          {
+            "name": "UploadFileConnectionCreated_at"
+          },
+          {
+            "name": "UploadFileConnectionUpdated_at"
+          },
+          {
+            "name": "UploadFileConnectionName"
+          },
+          {
+            "name": "UploadFileConnectionAlternativeText"
+          },
+          {
+            "name": "UploadFileConnectionCaption"
+          },
+          {
+            "name": "UploadFileConnectionWidth"
+          },
+          {
+            "name": "UploadFileConnectionHeight"
+          },
+          {
+            "name": "UploadFileConnectionFormats"
+          },
+          {
+            "name": "UploadFileConnectionHash"
+          },
+          {
+            "name": "UploadFileConnectionExt"
+          },
+          {
+            "name": "UploadFileConnectionMime"
+          },
+          {
+            "name": "UploadFileConnectionSize"
+          },
+          {
+            "name": "UploadFileConnectionUrl"
+          },
+          {
+            "name": "UploadFileConnectionPreviewUrl"
+          },
+          {
+            "name": "UploadFileConnectionProvider"
+          },
+          {
+            "name": "UploadFileConnectionProvider_metadata"
+          },
+          {
+            "name": "UploadFileConnectionCreated_by"
+          },
+          {
+            "name": "UploadFileConnectionUpdated_by"
+          },
+          {
+            "name": "UsersPermissionsPermission"
+          },
+          {
+            "name": "UsersPermissionsRole"
+          },
+          {
+            "name": "UsersPermissionsRoleConnection"
+          },
+          {
+            "name": "UsersPermissionsRoleAggregator"
+          },
+          {
+            "name": "UsersPermissionsRoleGroupBy"
+          },
+          {
+            "name": "UsersPermissionsRoleConnectionId"
+          },
+          {
+            "name": "UsersPermissionsRoleConnectionName"
+          },
+          {
+            "name": "UsersPermissionsRoleConnectionDescription"
+          },
+          {
+            "name": "UsersPermissionsRoleConnectionType"
+          },
+          {
+            "name": "UsersPermissionsRoleConnectionCreated_by"
+          },
+          {
+            "name": "UsersPermissionsRoleConnectionUpdated_by"
+          },
+          {
+            "name": "createRolePayload"
+          },
+          {
+            "name": "updateRolePayload"
+          },
+          {
+            "name": "deleteRolePayload"
+          },
+          {
+            "name": "UsersPermissionsUser"
+          },
+          {
+            "name": "UsersPermissionsUserConnection"
+          },
+          {
+            "name": "UsersPermissionsUserAggregator"
+          },
+          {
+            "name": "UsersPermissionsUserGroupBy"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionId"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionCreated_at"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionUpdated_at"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionUsername"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionEmail"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionProvider"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionConfirmed"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionBlocked"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionRole"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionCreated_by"
+          },
+          {
+            "name": "UsersPermissionsUserConnectionUpdated_by"
+          },
+          {
+            "name": "createUserPayload"
+          },
+          {
+            "name": "updateUserPayload"
+          },
+          {
+            "name": "deleteUserPayload"
+          },
+          {
+            "name": "ComponentPagesImage"
+          },
+          {
+            "name": "ComponentPagesQuote"
+          },
+          {
+            "name": "ComponentPagesRichText"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "PagesPageZoneDynamicZone",
+        "possibleTypes": [
+          {
+            "name": "ComponentPagesImage"
+          },
+          {
+            "name": "ComponentPagesQuote"
+          },
+          {
+            "name": "ComponentPagesRichText"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+query Pages($Page: String!) {
+  pages: pages(where: { Title: $Page }) {
+    Title
+    Description
+    pageZone {
+      ... on ComponentPagesImage {
+        caption
+        image {
+          url
+        }
+      }
+      ... on ComponentPagesQuote {
+        quote
+        quoter
+      }
+      ... on ComponentPagesRichText {
+        richText
+      }
+    }
+  }
+}
