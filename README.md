@@ -13,8 +13,10 @@ $ yarn dev
 $ yarn build
 $ yarn start
 
+# generate graphql fragment for Dynamic Zones
+$ yarn graphqlgen
+
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Happy Developing :)
