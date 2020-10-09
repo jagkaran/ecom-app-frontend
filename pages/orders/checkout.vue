@@ -120,6 +120,18 @@ export default {
       loading: false,
     };
   },
+  head() {
+    return {
+      title: `Checkout with ${this.numberOfItems} Items Now | Hunger Stop`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Order food online :)",
+        },
+      ],
+    };
+  },
   computed: {
     id() {
       return this.$route.params.id;

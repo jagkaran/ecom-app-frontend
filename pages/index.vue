@@ -19,6 +19,18 @@ export default {
       title: "Hunger Stop", //page title
     };
   },
+  head() {
+    return {
+      title: this.title + " | Homepage",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Order food online :)",
+        },
+      ],
+    };
+  },
   apollo: {
     pages: {
       query: contentQuery,

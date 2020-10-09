@@ -56,6 +56,18 @@ export default {
       restaurant: Object,
     };
   },
+  head() {
+    return {
+      title: this.restaurant.r_name + " | Landing page",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Order food online :)",
+        },
+      ],
+    };
+  },
   apollo: {
     restaurant: {
       prefetch: true,

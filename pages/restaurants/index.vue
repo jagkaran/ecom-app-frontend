@@ -34,7 +34,7 @@
             >See dishes</router-link
           > -->
           <nuxt-link
-          class="uk-button uk-button-primary"
+            class="uk-button uk-button-primary"
             :to="
               localePath({
                 name: 'restaurants-id',
@@ -65,10 +65,23 @@ export default {
   data() {
     return {
       // Initialize an empty restaurants variabkle
+      title: "All Restaurants",
       restaurants: [],
       query: "",
       fallbackImage:
         "https://safetyaustraliagroup.com.au/wp-content/uploads/2019/05/image-not-found.png",
+    };
+  },
+  head() {
+    return {
+      title: this.title + " | Landing page",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Order food online :)",
+        },
+      ],
     };
   },
   apollo: {

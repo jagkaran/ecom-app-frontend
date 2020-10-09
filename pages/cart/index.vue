@@ -16,6 +16,18 @@ export default {
   components: {
     Cart,
   },
+  head() {
+    return {
+      title: `Cart with ${this.numberOfItems} Items | Hunger Stop`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Order food online :)",
+        },
+      ],
+    };
+  },
   computed: {
     numberOfItems() {
       return this.$store.getters["cart/numberOfItems"];

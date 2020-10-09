@@ -13,7 +13,9 @@
         <!-- Displays all Quotes here -->
         <div v-if="zone.__typename === 'ComponentPagesQuote'">
           <blockquote>
-            <p class="uk-margin-small-bottom">{{ zone.quote }}</p>
+            <p class="uk-margin-small-bottom">
+              {{ $i18n.locale === "en" ? zone.quote : zone.richText }}
+            </p>
             <footer>{{ zone.quoter }}</footer>
           </blockquote>
         </div>
@@ -49,9 +51,15 @@
 </template>
 
 <script>
+//import translate from "~/utils/google-translate";
 export default {
   // content is query data from parent page
   // title is the page title of parent page
   props: ["content", "title"],
+  data() {
+    return {
+      text: "Hello",
+    };
+  },
 };
 </script>

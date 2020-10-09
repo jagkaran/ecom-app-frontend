@@ -73,9 +73,22 @@ import strapi from "~/utils/strapi";
 export default {
   data() {
     return {
+      title: "Login Now",
       email: "",
       password: "",
       loading: false,
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Order food online :)",
+        },
+      ],
     };
   },
   methods: {

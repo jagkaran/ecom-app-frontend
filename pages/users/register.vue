@@ -20,31 +20,40 @@
 
               <div class="uk-margin">
                 <label class="uk-form-label">Username</label>
-                <input
-                  class="uk-input"
-                  v-model="username"
-                  type="text"
-                  placeholder="Ex: jagkaran"
-                />
+                <div class="uk-inline">
+                  <span class="uk-form-icon" uk-icon="user"></span>
+                  <input
+                    class="uk-input"
+                    v-model="username"
+                    type="text"
+                    placeholder="Ex: jagkaran"
+                  />
+                </div>
               </div>
 
               <div class="uk-margin">
                 <label class="uk-form-label" for="form-stacked-text"
                   >Email</label
                 >
-                <input
-                  class="uk-input"
-                  v-model="email"
-                  type="email"
-                  placeholder="Ex: jagkarans43@gmail.com"
-                />
+                <div class="uk-inline">
+                  <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                  <input
+                    class="uk-input"
+                    v-model="email"
+                    type="email"
+                    placeholder="Ex: jagkarans43@gmail.com"
+                  />
+                </div>
               </div>
 
               <div class="uk-margin">
                 <label class="uk-form-label" for="form-stacked-text"
                   >Password</label
                 >
-                <input class="uk-input" v-model="password" type="password" />
+                <div class="uk-inline">
+                  <span class="uk-form-icon" uk-icon="lock"></span>
+                  <input class="uk-input" v-model="password" type="password" />
+                </div>
               </div>
 
               <div class="uk-margin">
@@ -72,10 +81,23 @@ import strapi from "~/utils/strapi";
 export default {
   data() {
     return {
+      title: "Register Online",
       email: "",
       password: "",
       username: "",
       loading: false,
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Order food online :)",
+        },
+      ],
     };
   },
   methods: {
